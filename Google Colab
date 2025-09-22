@@ -1,0 +1,65 @@
+Part 4: How to Use Your GitHub Repository
+Running from GitHub in Google Colab
+
+Open Google Colab: Go to colab.research.google.com
+Install packages:
+
+python!pip install requests pandas beautifulsoup4 lxml
+
+Load your scraper directly from GitHub:
+
+pythonimport requests
+exec(requests.get('https://raw.githubusercontent.com/YOUR_USERNAME/scad-course-scraper/main/scad_scraper.py').text)
+
+Run it:
+
+pythondf = scrape_all_courses()
+Sharing with Others
+
+Share the repository: Give people the link: https://github.com/YOUR_USERNAME/scad-course-scraper
+One-click Colab: They can click the "Open in Colab" badge in your README
+Direct notebook link: https://colab.research.google.com/github/YOUR_USERNAME/scad-course-scraper/blob/main/SCAD_Scraper_Notebook.ipynb
+
+Updating Your Code
+When you want to update the scraper:
+
+Go to your repository on GitHub
+Click on scad_scraper.py
+Click the pencil icon (✏️) to edit
+Make your changes
+Commit with a descriptive message
+The updated code will automatically be available to anyone using the GitHub link
+
+Part 5: Pro Tips
+Keep Your Repository Organized
+
+📁 Add more files as needed (documentation, examples, etc.)
+🏷️ Use tags/releases for major versions
+📝 Update the README when you add features
+🐛 Use Issues to track bugs or feature requests
+
+Make it Professional
+
+⭐ Add a license (MIT is common for open source)
+📊 Add example output files
+🔧 Include troubleshooting guide
+📸 Add screenshots to README
+
+Security Note
+
+✅ Never commit API keys or passwords
+✅ Use environment variables for sensitive data
+✅ The current scraper is safe - no credentials needed
+
+
+Summary
+After following these steps, you'll have:
+
+✅ A professional GitHub repository
+✅ Working scraper that anyone can run
+✅ Easy sharing via links
+✅ Version control for updates
+✅ Professional documentation
+
+Your repository will be accessible at: https://github.com/YOUR_USERNAME/scad-course-scraper
+Remember to replace YOUR_USERNAME with your actual GitHub username in all the links!
